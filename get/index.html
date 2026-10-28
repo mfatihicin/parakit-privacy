@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Parakit — Harcama & borç takibi</title>
+<meta name="description" content="Parakit: harcama, bütçe ve borç takibi. Hesap yok, bulut yok, internetsiz. Every penny in its place.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Parakit 🦜 Harcama & borç takibi">
+<meta property="og:description" content="Her kuruş yerli yerinde. App Store ve Google Play'de ücretsiz.">
+<meta property="og:image" content="https://mfatihicin.github.io/parakit-privacy/get/og.png">
+<meta property="og:url" content="https://mfatihicin.github.io/parakit-privacy/get/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="apple-itunes-app" content="app-id=6794076825">
+<style>
+  body{margin:0;font-family:-apple-system,Segoe UI,Roboto,sans-serif;background:linear-gradient(#DEF3E4,#F8FBF9);color:#112019;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center}
+  main{padding:32px 20px;max-width:420px}
+  img{width:120px;height:120px;border-radius:28px;box-shadow:0 10px 30px rgba(30,70,45,.25)}
+  h1{font-size:40px;margin:20px 0 4px} p{color:#465C50;margin:0 0 28px}
+  a.b{display:block;margin:12px 0;padding:16px;border-radius:14px;background:#22A04C;color:#fff;font-weight:700;text-decoration:none;font-size:18px}
+  a.b.alt{background:#112019}
+</style>
+</head>
+<body>
+<main>
+  <img src="icon.png" alt="Parakit">
+  <h1>Parakit</h1>
+  <p id="s">Her kuruş yerli yerinde.</p>
+  <a class="b" id="ios" href="https://apps.apple.com/app/id6794076825">App Store</a>
+  <a class="b alt" id="and" href="https://play.google.com/store/apps/details?id=com.mfatihicin.parakit">Google Play</a>
+</main>
+<script>
+  var ua = navigator.userAgent || '';
+  if (!/^tr/i.test(navigator.language || '')) document.getElementById('s').textContent = 'Every penny in its place.';
+  if (/android/i.test(ua)) location.replace(document.getElementById('and').href);
+  else if (/iphone|ipad|ipod|macintosh.*mobile/i.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)) location.replace(document.getElementById('ios').href);
+</script>
+</body>
+</html>
